@@ -12,7 +12,7 @@ import os
 from gi.repository import Notify
 from BeautifulSoup import BeautifulSoup
 from urllib import urlopen
-import unidecode
+#import unidecode
 
 def searchTureng(word):	
 	url="http://www.tureng.com/search/"+word	
@@ -24,7 +24,6 @@ def searchTureng(word):
 	parsedHtml = BeautifulSoup(html)
 	trlated = parsedHtml.body.find('td', attrs={'class':'tr ts'}).text
 	trlated.encode("ascii", "ignore")
-	trlated = unidecode.unidecode(trlated)
 
 
 	return trlated
