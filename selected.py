@@ -21,20 +21,23 @@ def searchTureng(word):
 	except:
 		return "No connection"
 	html = answer.read()
-	parsedHtml = BeautifulSoup(html)
-	trlated = parsedHtml.body.find('td', attrs={'class':'tr ts'}).text
+	soup = BeautifulSoup(html)
+	trlated = soup.body.find('td', attrs={'class':'tr ts'}).text
 	trlated.encode("ascii", "ignore")
 
+	#trlated = []
+	#for td in soup.find('td', attrs={'class':'tr ts'}): 
+	#	trlated.append(td.text)
 
 	return trlated
 
 
 
 selectedText = os.popen('xsel').read()
-print (selectedText)
+#print (selectedText)
 
 result = searchTureng(selectedText)
-print (result)
+#print (result)
 
 Notify.init ("SelecTra")
 trlated=Notify.Notification.new ("SelecTra", result)
