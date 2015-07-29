@@ -22,15 +22,19 @@ def searchTureng(word):
 		return "No connection"
 	html = answer.read()
 	soup = BeautifulSoup(html)
-	trlated = soup.body.find('td', attrs={'class':'tr ts'}).text
-	trlated.encode("ascii", "ignore")
 
-	#trlated = []
-	#for td in soup.find('td', attrs={'class':'tr ts'}): 
-	#	trlated.append(td.text)
-
+	trlated=''
+	try:
+		table = soup.find('table')
+		td = table.findAll('td', attrs={'class':'tr ts'})
+		for val in td:
+			trlated = trlated + val.text + ','
+		
+		return trlated
+	except:
+		return "Not Found !"
+	
 	return trlated
-
 
 
 selectedText = os.popen('xsel').read()
