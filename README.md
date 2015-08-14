@@ -5,6 +5,7 @@
 
 ### Gerekli Paketler
 * xsel
+* python-beautifulsoup
 ```sh
 #apt-get install xsel
 #apt-get install python-beautifulsoup
