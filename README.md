@@ -7,6 +7,7 @@
 * xsel
 ```sh
 #apt-get install xsel
+#apt-get install python-beautifulsoup
 ```
 
 ### Kullanılan Kütüphaneler
