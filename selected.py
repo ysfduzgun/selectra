@@ -6,7 +6,7 @@
 
 import os
 from gi.repository import Notify
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 from urllib import urlopen
 
 def searchTureng(word):	

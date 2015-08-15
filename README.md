@@ -8,7 +8,7 @@
 * python-beautifulsoup
 ```sh
 #apt-get install xsel
-#apt-get install python-beautifulsoup
+#apt-get install python-bs4
 ```
 
 ### Kullanılan Kütüphaneler
