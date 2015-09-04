@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#/usr/bin/python
 # -*- coding: utf-8 -*-
 # coding: utf-8
 # Yusuf Duzgun ysfduzgun92@gmail.com
@@ -41,6 +41,4 @@ result = searchTureng(selectedText)
 Notify.init ("SelecTra")
 trlated=Notify.Notification.new ("SelecTra", result)
 trlated.show () 
-
-
 
