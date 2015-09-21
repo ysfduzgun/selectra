@@ -8,9 +8,11 @@
 ### Gerekli Paketler
 * xsel
 * python-beautifulsoup
+
+Kurmak için;
+
 ```sh
-#apt-get install xsel
-#apt-get install python-bs4
+#sudo ./requirements.sh
 ```
 
 ### Kullanılan Kütüphaneler
@@ -19,6 +21,10 @@
 * BeautifulSoup
 * urllib
 
+Kurmak için;
+```sh
+sudo pip install -r requirements.txt
+```
 ### Kurulum Ve Kullanım
 >"selected.py" dosyasını bilgisayarınız herhangi bir yerine kopyalayın.
 >Sisteminizin ayarlar bölümünden klaye kısayollarına giriniz.
