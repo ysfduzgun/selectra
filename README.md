@@ -12,7 +12,7 @@
 Kurmak için;
 
 ```sh
-#sudo ./requirements.sh
+sudo ./requirements.sh
 ```
 
 ### Kullanılan Kütüphaneler
