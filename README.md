@@ -24,6 +24,7 @@ sudo ./requirements.sh
 
 ### Kurulum Ve Kullanım
 >1- "selected.py" dosyasını bilgisayarınız herhangi bir yerine kopyalayın.
+<br>
 >2- Sisteminizin ayarlar bölümünden klaye kısayollarına giriniz.
 >3- Özel Kısayol(Custom Shortcut) Ekle deyip Komut(Command) bölümüne
 Aşağıdaki komutu girin Ve kendinize bir kısayol tuşu belirleyin. 
