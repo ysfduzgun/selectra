@@ -21,9 +21,10 @@
 
 ### Kurulum Ve Kullanım
 >"selected.py" dosyasını bilgisayarınız herhangi bir yerine kopyalayın.
->Sisteminizin klaye kısayollarına isteğiniz kısayol tuşunu atadıktan sonra
->komut(command) bölümüne aşağıdaki komutu girdikten sonra ingilizce bir 
->kelime seçin ve belirlediğiniz kısayol tuşuna basın :) .
+>Sisteminizin ayarlar bölümünden klaye kısayollarına giriniz.
+>Özel Kısayol(Custom Shortcut) Ekle deyip Komut(Command) bölümüne
+>Aşağıdaki komutu girin Ve kendinize bir kısayol tuşu belirleyin. 
+>Ingilizce bir kelime seçin ve belirlediğiniz kısayol tuşuna basın :) .
 ```sh
 python /dosyamHerNeredeyse/selected.py
 ```
