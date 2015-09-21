@@ -1,2 +1,0 @@
-beautifulsoup4==4.4.0
-urlopen==1.0.0

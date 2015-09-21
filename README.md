@@ -20,19 +20,16 @@ sudo ./requirements.sh
 * gi.repository
 * BeautifulSoup
 * urllib
+* xsel
 
-Kurmak için;
-```sh
-sudo pip install -r requirements.txt
-```
 ### Kurulum Ve Kullanım
->"selected.py" dosyasını bilgisayarınız herhangi bir yerine kopyalayın.
->Sisteminizin ayarlar bölümünden klaye kısayollarına giriniz.
->Özel Kısayol(Custom Shortcut) Ekle deyip Komut(Command) bölümüne
->Aşağıdaki komutu girin Ve kendinize bir kısayol tuşu belirleyin. 
->Ingilizce bir kelime seçin ve belirlediğiniz kısayol tuşuna basın :) .
+>1- "selected.py" dosyasını bilgisayarınız herhangi bir yerine kopyalayın.
+>2- Sisteminizin ayarlar bölümünden klaye kısayollarına giriniz.
+>3- Özel Kısayol(Custom Shortcut) Ekle deyip Komut(Command) bölümüne
+Aşağıdaki komutu girin Ve kendinize bir kısayol tuşu belirleyin. 
+>4- Ingilizce bir kelime seçin ve belirlediğiniz kısayol tuşuna basın :) .
 ```sh
 python /dosyamHerNeredeyse/selected.py
 ```
-
+![örnek](http://i.hizliresim.com/oZBADm.png)
 
