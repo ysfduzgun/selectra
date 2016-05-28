@@ -9,36 +9,28 @@ from gi.repository import Notify
 from bs4 import BeautifulSoup
 from urllib import urlopen
 
-def searchTureng(word):	
-    url="http://www.tureng.com/search/"+word	
+def searchTureng(word):
+    url="http://www.tureng.com/search/"+word
     try:
-    	answer = urlopen(url)
+        answer = urlopen(url)
     except:
-    	return "No connection"
+        return "No connection"
     html = answer.read()
     soup = BeautifulSoup(html)
-    
     trlated=''
     try:
-    	table = soup.find('table')
-    	td = table.findAll('td', attrs={'lang':'tr'})
+        table = soup.find('table')
+        td = table.findAll('td', attrs={'lang':'tr'})
         for val in td[0:5]:
-    		trlated = trlated + val.text + '\n'
-                   		
-    	return trlated
+            trlated = trlated + val.text + '\n'
+        return trlated
     except:
-    	return "Not Found !"
-	
-    return trlated
-
+        return "Not Found !"
 
 selectedText = os.popen('xsel').read()
 #print (selectedText)
-
 result = searchTureng(selectedText)
 #print (result)
-
 Notify.init ("SelecTra")
-trlated=Notify.Notification.new ("SelecTra", result)
-trlated.show () 
-
+trlated=Notify.Notification.new ('W: '+selectedText, result)
+trlated.show ()
