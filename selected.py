@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # coding: utf-8
 # Yusuf Duzgun ysfduzgun92@gmail.com
-# Licanse : GPL3
+# License : GPL3
 
 import os
 from gi.repository import Notify
