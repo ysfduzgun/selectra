@@ -7,7 +7,8 @@
 
 ### Gerekli Paketler
 * xsel
-* python-beautifulsoup
+* python-bs4
+* python-gobject
 
 Kurmak için;
 
