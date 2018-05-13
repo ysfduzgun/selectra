@@ -3,8 +3,6 @@
 >seçitiğiniz en son kelimeyi Tureng.com dan en-tr arama yapıp 
 >ilk 5 sonucu ekrana bildirim olarak dönderen program.
 
-![selectra](http://i.hizliresim.com/lynBZQ.png)
-
 ### Gerekli Paketler
 * xsel
 * python-bs4
@@ -14,6 +12,8 @@ Kurmak için;
 
 ```sh
 sudo ./requirements.sh
+#kelimeyi sectikten sonra
+python selectra.py
 ```
 
 ### Kullanılan Kütüphaneler
