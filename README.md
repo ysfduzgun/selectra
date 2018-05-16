@@ -13,7 +13,7 @@ apt install xsel python-bs4 python-gobject
 dnf install xsel python2-gobject python2-beautifulsoup4
 ```
 
-Calistirmak için;
+### Calistirmak için;
 
 ```sh
 #kelimeyi sectikten sonra
