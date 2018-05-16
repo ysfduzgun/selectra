@@ -4,14 +4,18 @@
 >ilk 5 sonucu ekrana bildirim olarak dönderen program.
 
 ### Gerekli Paketler
-* xsel
-* python-bs4
-* python-gobject
+* Pardus/Debian/Ubuntu/Mint Benzeri
+```sh
+apt install xsel python-bs4 python-gobject
+```
+* Fedora/Centos Benzeri
+```sh
+dnf install xsel python2-gobject python2-beautifulsoup4
+```
 
-Kurmak için;
+Calistirmak için;
 
 ```sh
-sudo ./requirements.sh
 #kelimeyi sectikten sonra
 python selectra.py
 ```
