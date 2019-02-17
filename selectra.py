@@ -1,13 +1,15 @@
 #/usr/bin/python
 # -*- coding: utf-8 -*-
 # coding: utf-8
-# Yusuf Duzgun ysfduzgun92@gmail.com
+# Yusuf Duzgun yzduzgun@gmail.com
 # License : GPL3
 
 import os
 from gi.repository import Notify
 from bs4 import BeautifulSoup
 from urllib import urlopen
+#import for alternative notify
+#import subprocess
 
 def searchTureng(word):
     url="http://www.tureng.com/search/"+word
@@ -34,3 +36,6 @@ result = searchTureng(selectedText)
 Notify.init ("SelecTra")
 trlated=Notify.Notification.new ('W: '+selectedText, result)
 trlated.show ()
+
+#alternative notify
+#subprocess.Popen(["notify-send", selectedText, result])
