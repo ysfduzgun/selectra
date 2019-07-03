@@ -5,20 +5,18 @@
 # License : GPL3
 
 import os
-#from gi.repository import Notify
 from bs4 import BeautifulSoup
-from urllib import urlopen
-#import for alternative notify
+import urllib3
 import subprocess
 
 def searchTureng(word):
+    http=urllib3.PoolManager()
     url="http://www.tureng.com/search/"+word
     try:
-        answer = urlopen(url)
+        answer = http.request('GET', url)
     except:
         return "No connection"
-    html = answer.read()
-    soup = BeautifulSoup(html, "lxml")
+    soup = BeautifulSoup(answer.data)
     trlated=''
     try:
         table = soup.find('table')
@@ -33,9 +31,4 @@ selectedText = os.popen('xsel').read()
 #print (selectedText)
 result = searchTureng(selectedText)
 #print (result)
-#Notify.init ("SelecTra")
-#trlated=Notify.Notification.new ('W: '+selectedText, result)
-#trlated.show ()
-
-#alternative notify
 subprocess.Popen(["notify-send", selectedText, result])

@@ -4,20 +4,15 @@
 >ilk 5 sonucu ekrana bildirim olarak dönderen program.
 
 ### Gerekli Paketler
-* Pardus/Debian/Ubuntu/Mint Benzeri
 ```sh
-apt install xsel python-bs4 python-gobject
-```
-* Fedora/Centos Benzeri
-```sh
-dnf install xsel python2-gobject python2-beautifulsoup4
+apt install xsel python3-bs4 python3-urllib3
 ```
 
 ### Calistirmak için;
 
 ```sh
 #kelimeyi sectikten sonra
-python selectra.py
+python3 selectra.py
 ```
 
 ### Kullanılan Kütüphaneler
@@ -26,6 +21,7 @@ python selectra.py
 * BeautifulSoup
 * urllib
 * xsel
+* subprocess
 
 ### Kurulum Ve Kullanım
 >1- "selected.py" dosyasını bilgisayarınız herhangi bir yerine kopyalayın.
@@ -39,5 +35,3 @@ Aşağıdaki komutu girin Ve kendinize bir kısayol tuşu belirleyin.
 ```sh
 python /dosyamHerNeredeyse/selected.py
 ```
-![örnek](http://i.hizliresim.com/oZBADm.png)
-
