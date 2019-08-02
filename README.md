@@ -5,7 +5,7 @@
 
 ### Gerekli Paketler
 ```sh
-apt install xsel python3-bs4 python3-urllib3
+apt install xsel python3-bs4 python3-urllib3 libnotify-bin
 ```
 
 ### Calistirmak için;
