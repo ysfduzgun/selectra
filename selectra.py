@@ -6,17 +6,18 @@
 
 import os
 from bs4 import BeautifulSoup
-import urllib3
+from urllib.request import Request, urlopen
 import subprocess
 
 def searchTureng(word):
-    http=urllib3.PoolManager()
     url="http://www.tureng.com/search/"+word
+    data = ""
     try:
-        answer = http.request('GET', url)
+        req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        data = urlopen(req).read()
     except:
         return "No connection"
-    soup = BeautifulSoup(answer.data)
+    soup = BeautifulSoup(data, 'html.parser')
     trlated=''
     try:
         table = soup.find('table')
